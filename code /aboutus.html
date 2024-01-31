@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Style.css">
+    <title>Go print </title>
+    <style>
+        footer {
+            margin-bottom: 0px;
+
+        }
+
+        footer ul {
+            background: rgb(255, 255, 255);
+        }
+
+        footer li {
+            display: inline-block;
+            padding: 20px;
+            font-family: Arial, Helvetica, sans-serif;
+
+        }
+
+        .our_team_container {
+            display: flex;
+            justify-content: space-around;
+
+
+        }
+
+        .our_team_box {
+            height: 390px;
+            width: 500px;
+            border-style: groove;
+            margin: 20px;
+            border-radius: 50px;
+            font-size: 20px;
+            align-content: center;
+        }
+
+        .team_mate_pics {
+            margin-left: 170px;
+            border-radius: 50px;
+            margin-top: 10px;
+            height: 210px;
+            width: 170px;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        .form-container {
+            width: 80%;
+            margin: 50px auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+
+        form {
+            margin-top: 20px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+            color: #555;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #383636;
+            border-radius: 5px;
+        }
+
+        textarea {
+            height: 150px;
+        }
+
+         .form{
+            background-color: #ee0f0f;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #2b2b2b;
+        }
+       .portfolio{
+        background-color: #333;
+        color: #fff;
+        border: none;
+        border-radius:10px;
+        margin-left: 230px;
+        height: 40px;
+       }
+    </style>
+
+</head>
+
+<body>
+
+    <div class="header_container">
+        <div class="left_header">
+            Enjoy 60% Off <u>Exclusion&details</u>
+            <span class="right_header"><u>Grab your deal now!!!!</u></span>
+        </div>
+    </div>
+
+    <div class="logo_section">
+        <div class="logo_section_left">
+            Free Shipping on orders +699$ <u>Details</u>
+        </div>
+        <div>
+            <span style="font-family:Verdana, Geneva, Tahoma, sans-serif;font-size:xx-large;"><b>Go print</span>
+            .com
+        </div>
+    </div>
+
+    <hr>
+    <nav>
+
+        <ul>
+            <li><a href="index.html">Home</a> </li>
+            <li><a href="Products.html">Products</a></li>
+            <li><a href="aboutus.html">About us</a></li>
+            <li><a href="Blog.html">Blog</a></li>
+            <li><a href="Research.html">Research</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class=brand>
+            <h> | Our Teams |</h>
+        </div>
+        <br>
+        <br>
+        <div class="our_team_container">
+            <div class="our_team_box">
+                <img src="ourteam pic/anmol.jpg" class="team_mate_pics">
+                <P style="color: rgb(0, 0, 0);margin-left: 175px;">Anmol poudyal</P>
+                <p
+                    style="font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;margin-left: 110px;">
+                    Founder & CEO/Senior Dev</p>
+                    <button class="portfolio" onclick="anmolport()">view more</button>
+            </div>
+            <div class="our_team_box">
+                <img src="ourteam pic/411424249_900383138058859_9068486954550257444_n.jpg" class="team_mate_pics">
+                <P style="color: rgb(0, 0, 0);margin-left: 180px;">Muksham limbu</P>
+                <p
+                    style="font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;margin-left: 170px;">
+                    Designer/junior Dev</p>
+                    <button class="portfolio" onclick="mukshamport()">view more</button>
+                    
+
+            </div>
+        </div>
+        <br>
+        <div class="our_team_container">
+            <div class="our_team_box">
+                <img src="ourteam pic/411273443_688567089817710_6892055424323025306_n.jpg" class="team_mate_pics">
+                <P style="color: rgb(0, 0, 0);margin-left: 155px;">Paushan chaudhari</P>
+                <p
+                    style="font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;margin-left: 190px;">
+                    Junior Dev</p>
+                    <button class="portfolio" onclick="paushanport()">view more</button>
+
+
+            </div>
+            <div class="our_team_box">
+                <img src="ourteam pic/418524029_307351332282271_5528610935000781912_n.jpg" class="team_mate_pics">
+                <P style="color: rgb(0, 0, 0);margin-left: 200px;">Umar Ansari</P>
+                <p
+                    style="font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;margin-left: 200px;">
+                    Junior Dev</p>
+                    <button class="portfolio" onclick="umarport()">view more</button>
+
+            </div>
+        </div>
+        <br><br>
+        <div>
+
+            <img src="ourteam pic/Screen Shot 2024-01-13 at 8.12.01 PM.png" alt="pic" style="width: 100%;">
+        </div>
+        <br><br>
+        <div class="form-container">
+            <h1>Please help us to improve</h1>
+            <form id="feedback-form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" placeholder="Your Name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Your Email" required>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" placeholder="Your Feedback" required></textarea>
+
+                <button class="form" type="submit" onclick="feedback()">Submit</button>
+            </form>
+        </div>
+    </main>
+    <footer>
+        <hr>
+        <ul>
+
+            <li><u>Terms & condition</u></li>
+            <li><u>Accessibility</u></li>
+            <li><u>Privacy Policy</u></li>
+            <li><u>About Ads</u></li>
+            <li> &copy; 2024 Go print.All rights reserved</li>
+        </ul>
+    </footer>
+</body>
+<script> 
+function feedback(){
+    debugger;
+    alert("Thank you for your feed back");
+}
+
+function anmolport(){
+    window.location.href ="./Anmol_portfolio.html"
+}
+function paushanport(){
+    window.location.href ="./paushan_portfolio.html"
+}
+function umarport(){
+    window.location.href ="./umar_portfolio.html"
+
+}
+function mukshamport(){
+    window.location.href = "./muksham_portfolio.html"
+}
+</script>
+
+</html>

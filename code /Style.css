@@ -1,0 +1,133 @@
+/*for the navigation bar styling*/
+nav ul {
+    list-style-type: none;
+    font-size: larger;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
+
+}
+
+nav {
+    margin-left: 390px;
+}
+
+nav a { /* this the for the anchor tag element styling*/
+
+
+    color: rgb(79, 77, 77);
+    padding: 20px;
+    display: inline-block;
+
+}
+
+nav li {
+    display: inline-block;
+}
+
+nav li:hover {
+    transform: scale(1.2);
+}
+/*this for the top part where enjoy 60% off is written*/ 
+.header_container {
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1.6;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: small;
+    background-color: rgb(30, 30, 30);
+    padding: 3px;
+}
+/*this is for the section above logo of Goprint*/
+.right_header {
+    padding: 1px;
+    text-align: right;
+    color: aliceblue;
+    float: right;
+    margin: left 1.7px;
+    
+
+}
+
+.left_header {
+    color: aliceblue;
+    padding-left: 15px;
+}
+/*this is for the logo section of the top part */
+.logo_section {
+    background-color: #ffffff;
+    display: flex;
+    gap: 400px;
+}
+
+.logo_section_left {
+    margin-bottom: 0px;
+    padding-top: 20px;
+}
+
+.pic_print_info {
+    height: 200px;
+}
+ /*this is for the brand description section of HOME page which is at the last section */
+.brand {/* this is for the description of whats next or simply a content breaker herading*/
+    background-color: rgba(255, 250, 250, 0.403);
+    height: 50px;
+    text-align: center;
+    justify-items: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: xx-large;
+    padding-top: 10px;
+    color: rgb(105, 101, 101);
+}
+/*this is for the container that stores the different small boxes of brand desc and pics*/
+.brand_container {
+    display: flex;
+    justify-content: space-around;
+
+
+}
+/*this is individual box of the brand company description*/
+.brand_box {
+    border-style: groove;
+    width: 300px;
+    height: 600px;
+    border-radius: 20px;
+    color: rgb(62, 61, 56);
+    overflow: scroll;
+
+}
+/* this is for the paragraph of the brand box*/
+.para_brand {
+    font-family: serif;
+    display: block;
+    text-align: center;
+    line-height: 20px;
+    font-size: larger;
+    line-height: 30px;
+    block-size: 20px;
+
+}
+/* this is for a box product container*/
+.product_container {
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    height: 650px;
+    overflow: scroll;
+}
+
+.product_box {
+    height: 560px;
+    width: 335px;
+    border-style: groove;
+    border-radius: 50px;
+    background-color: rgba(35, 34, 34, 0.114);
+}
+
+
+
+.product_pic {
+    height: 300px;
+    width: 300px;
+    margin-left: 20px;
+    border-radius: 20px;
+}

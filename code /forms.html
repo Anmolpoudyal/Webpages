@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GO print.com</title>
+    <link rel="stylesheet" href="formC.css" />
+</head>
+
+<body>
+    <h1 id="pageTitle">GO Print: Choose Your Ideal Printers</h1>
+    <form id="printer-form" onsubmit="return validateStep(currentStep)">
+        <!-- Step 1 - User Details -->
+        <div id="step-1">
+            <h2>Step 1: Your Details</h2>
+
+            <label for="name">Name:</label>
+            <input type="text" id="name" placeholder="Anmol poudyal" />
+
+            <label for="address">Address:</label>
+            <textarea id="address" placeholder="Urlabari -04"></textarea>
+
+            <button type="button" onclick="nextStep()">Next</button>
+        </div>
+
+
+        <!-- Step 2 - Select Printer Model -->
+        <div id="step-2" style="display: none;">
+            <h2>Step 2: Select Printer Model</h2>
+
+            <select id="printer-model">
+                <option>Select model...</option>
+
+                <!-- Inkjet Models -->
+                <optgroup label="Printers">
+                    <option>HP 415 All-in-One</option>
+                    <option> CLASS MF643Cdw</option>
+                    <option>Xerox Model 7830</option>
+                    <option>Canon LBP6030W</option>
+                    <option>Xp600 Printhead</option>
+                    <option>Epson WF-C869</option>
+                    <option>Troy M404N</option>
+                    <option>Brother MFC-L575</option>
+                    <option>GP-520</option>
+                    <option>PIXMA G670</option>
+                    <option>Pixma GM4070 </option>
+                    <option>Canon LBP6030W</option>
+                </optgroup>
+            </select>
+            </select>
+
+            <label for="quantity">Quantity:</label>
+            <input type="number" id="quantity" />
+
+            <button type="button" onclick="previousStep()">Previous</button>
+            <button type="button" onclick="nextStep()">Next</button>
+        </div>
+
+        <!-- Step 3 - Delivery and Payment -->
+        <div id="step-3" style="display: none;">
+
+            <h2>Step 3: Delivery & Payment</h2>
+
+            <h3>Delivery</h3>
+
+            <label>
+                <input type="radio" name="delivery" value="standard">
+                Standard Delivery (5-7 days) - Free
+            </label>
+
+            <label>
+                <input type="radio" name="delivery" value="express">
+                Express Delivery (2-3 days) -+$9.99
+            </label>
+
+            <h3>Payment</h3>
+            <div class="paymentOptions">
+                <label>
+                    <input type="radio" name="payment" value="credit">
+                    Credit Card
+                </label>
+
+                <label>
+                    <input type="radio" name="payment" value="paypal">
+                    PayPal
+                </label>
+
+                <label>
+                    <input type="radio" name="payment" value="apple">
+                    Apple pay
+                </label>
+                <label>
+                    <input type="radio" name="payment" value="google">
+                    Google pay
+                </label>
+            </div>
+            <button type="button" onclick="previousStep()">Previous</button>
+            <button type="button" onclick="nextStep()">Next</button>
+
+        </div>
+
+
+        <!-- Step 4 - Additional Details -->
+        <div id="step-4" style="display: none;">
+
+            <h2>Step 4: Additional Details</h2>
+
+            <label>
+                Special Instructions:
+                <textarea placeholder="e.g. Deliver to back door"></textarea>
+            </label>
+
+            <label>
+                <input type="checkbox" id="installation">
+                Include professional installation ($49.99)
+            </label>
+
+            <label>
+                <input type="checkbox" id="warranty">
+                Add 1 year extended warranty ($29.99)
+            </label>
+
+            <label>
+                Do you have a coupon code?
+                <input type="text" placeholder="Enter code">
+            </label>
+
+            <label>
+                <input type="checkbox" id="receipt">
+                Have you received your receipt?
+            </label>
+            <button type="button" onclick="previousStep()">Previous</button>
+            <button type="button" onclick="nextStep()">Next</button>
+        </div>
+
+        <!-- Step 5 - Order Summary -->
+        <div id="step-5" style="display: none;">
+
+            <h2>Step 5: Order Summary</h2>
+
+            <table id="summary-table">
+                <tr>
+                    <td>Name:</td>
+                    <td id="summary-name"></td>
+                </tr>
+                <tr>
+                    <td>Address:</td>
+                    <td id="summary-address"></td>
+                </tr>
+                <tr>
+                    <td>Printer Model:</td>
+                    <td id="summary-printer-model"></td>
+                </tr>
+                <tr>
+                    <td>Quantity:</td>
+                    <td id="summary-quantity"></td>
+                </tr>
+            </table>
+            <div id="checkboxes">
+                <label>
+                    <input type="checkbox" id="terms">
+                    I agree to the terms and conditions
+                </label>
+
+                <label>
+                    <input type="checkbox" id="privacy">
+                    I agree to the privacy policy
+                </label>
+
+            </div>
+            <button type="button" onclick="previousStep()">Previous</button>
+            <button type="button" onclick="orders()">Summarize Order</button>
+            <button type="submit" id="purchase-button" onclick="purchase()" style="display:none">Purchase Printer</button>
+        </div>
+    </form>
+    <script src="scripts.js"></script>
+</body>
+
+</html>

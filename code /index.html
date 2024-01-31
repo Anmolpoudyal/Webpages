@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Style.css">
+    <title>Go print </title>
+    <style>
+        /* for the fooetr*/
+        footer {
+            margin-bottom: 0px;
+
+        }
+
+        footer ul {
+            background: rgb(255, 255, 255);
+        }
+
+        footer li {
+            display: inline-block;
+            padding: 20px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: small;
+
+        }
+        /* for the first main paragraph*/
+        .main_page_firs_paragraph {
+            text-align: center;
+            font-size: xx-large;
+            background: #191818;
+            color: rgba(255, 255, 255, 0.849);
+        }
+
+        .container_ads {
+            background-color: rgb(6, 5, 5);
+            margin-left: 75px;
+            margin-right: 75px;
+            justify-content: space-between;
+            display: flex;
+            border-radius: 20px;
+            height: 300px;
+            align-items: center;
+
+
+
+        }
+          /* for the ads part after the main static image */
+        .right_of_ads {
+            justify-content: center;
+            color: rgb(233, 230, 230);
+            line-height: 1.3;
+            margin-right: 100px;
+
+        }
+
+        .left_of_ads {
+            margin-left: 50px;
+        }
+
+        .button_product {
+            border-style: inherit;
+            height: 30px;
+            border-radius: 10px;
+            margin-left: 170px;
+            background-color: rgb(45, 45, 45);
+            color: aliceblue;
+        }
+
+        .middle_of_ads {
+            color: rgb(79, 77, 77);
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 25px;
+
+        }
+
+        .top_brand_container {
+            background-color: white;
+            display: flex;
+            justify-content: space-between;
+            height: 510px;
+            overflow: hidden;
+        }
+
+        .top_brand {
+            height: 500px;
+            width: 335px;
+            border-style: groove;
+            border-radius: 50px;
+            background-color: rgba(35, 34, 34, 0.114);
+        }
+
+        .top_pic {
+            height: 280px;
+            width: 280px;
+            margin-left: 20px;
+
+        }
+
+        .top_brand_desc li {
+            color: rgb(124, 127, 127);
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .button_top_brand {
+            border-style: inherit;
+            height: 40px;
+            border-radius: 10px;
+            margin-left: 70px;
+            background-color: rgb(45, 45, 45);
+            color: aliceblue;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <!--for the top presentation and ads space and offer info-->
+
+    <div class="header_container">
+        <div class="left_header">
+            Enjoy 60% Off <u>Exclusion&details</u>
+            <span class="right_header"><u>Grab your deal now!!!!</u></span>
+        </div>
+    </div>
+
+    <div class="logo_section">
+        <div class="logo_section_left">
+            Free Shipping on orders +699$ <u>Details</u>
+        </div>
+        <div>
+            <span style="font-family:Verdana, Geneva, Tahoma, sans-serif;font-size:xx-large;"><b>Go print</span>
+            .com
+        </div>
+    </div>
+
+    <hr>
+    <nav>
+
+        <ul>
+            <li><a href="index.html">Home</a> </li>
+            <li><a href="Products.html">Products</a></li>
+            <li><a href="aboutus.html">About us</a></li>
+            <li><a href="Blog.html">Blog</a></li>
+            <li><a href="Research.html">Research</a></li>
+        </ul>
+    </nav>
+    <hr>
+
+
+    <!-- this is for the main section -->
+    <p class="main_page_firs_paragraph"> Feel free to explore <br>Offer!!<br>offer!! </p>
+    <main>
+        <div>
+            <img src="homepic/banner.jpeg " style="width: 100%;">
+
+        </div>
+
+
+
+        <br>
+        <!--below div is for the ads that is showing limited offer and it shows the right section and the left section-->
+        <div class="container_ads">
+            <div class="left_of_ads">
+                <img src="homepic/ads.jpg" style="height: 200px; width: 200px;">
+            </div>
+
+            <div class="middle_of_ads">
+                <h1>Limited offer!!<br> Buy Now!!!</h1>
+
+            </div>
+            <div class="right_of_ads">
+                <h2 style="font-size: xx-large; font-family: Arial, Helvetica, sans-serif;">RUNNER 2600i Series</h2>
+                <p style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">With personalised
+                    user workflows,
+                    advanced security features and <br> control capabilities, the iR2600i is the ultimate document
+                    solution<br> device designed for the modern office environment.</p>
+
+
+                <button onclick="redirect()" class="button_product" > View Product</button>
+            </div>
+        </div>
+        <br><br><br>
+        <!--now section for top Products-->
+        <div class=brand>
+            <h> | TOP PRODUCTS |</h>a
+        </div>
+        <br>
+        <br>
+        <!--product 1-->
+        <div class="top_brand_container">
+            <div class="top_brand">
+                <img src="top_sell/home_top brand.png" class="top_pic">
+                <h style="margin-left: 60px;font-size: xx-large;color: rgb(49, 49, 49);">PIXMA G670</h>
+                <ul class="top_brand_desc">
+                    <li>Print, Scan, Copy</li>
+                    <li>ISO standard print speed (A4): up to 3.9 ipm black / colour</li>
+                    <li>Wireless, Wireless PictBridge, Mopria, AirPrint, Direct Wireless</li>
+                    <br>
+                    <button class="button_top_brand" onclick="redirect()"> View Product</button>
+
+            </div>
+                
+               <!--product 2-->
+            <div class="top_brand">
+                <img class="top_pic" src="top_sell/home_pic2.png">
+                <h style="margin-left: 60px;font-size: xx-large;color: rgb(49, 49, 49);">MF643CDW</h>
+                <ul class="top_brand_desc">
+                    <li>Print, Scan, Copy</li>
+                    <li>Print Speed (A4): Up to 21ppm (mono/colour)</li>
+                    <li>Print resolution: Up to 1,200 (equivalent) x 1,200dpi</li>
+                    <br>
+                    <button class="button_top_brand" onclick="redirect()"> View Product</button>
+            </div>
+              <!--product 3-->
+            <div class="top_brand">
+                <img class="top_pic" src="top_sell/home_pic3.png">
+                <h style="margin-left: 60px;font-size: xx-large;color: rgb(49, 49, 49);">GP-520</h>
+                <ul class="top_brand_desc">
+                    <li>Ideal for eye-catching posters and print proofing</li>
+                    <li>10 colours + fluorescent pink ink</li>
+                    <li>Intelligent media handling system</li>
+                    <br><br>
+                    <button class="button_top_brand" onclick="redirect()"> View Product</button>
+            </div>
+             <!--product 4-->
+            <div class="top_brand">
+                <img class="top_pic" style="border-radius: 20px;" src="top_sell/home_pic4.jpg">
+
+                <h style="margin-left: 60px;font-size: xx-large;color: rgb(49, 49, 49);">Laser MFP 135a</h>
+                <ul class="top_brand_desc">
+                    <li>Uncompromising laser quality</li>
+                    <li>Fast printing Get print speeds up to 20ppm</li>
+                    <li>The right price, Rely on a high-performance laser at affordable price.</li>
+                    <br>
+                    <button class="button_top_brand" onclick="redirect()"> View Product</button>
+            </div>
+
+
+        </div>
+
+
+
+
+
+        <!--for the brand description-->
+        <br><br><br>
+        <div class=brand>
+            <h> | Our Brands |</h>
+        </div>
+        <br>
+        <br><br><br>
+        <!--for the types of brand availabe each div has one product-->
+        <div class="brand_container">
+            <!--1st brand-->
+            <div class="brand_box">
+                <img src="homepic/brand_img1.png" style="height: 30px;margin: 70px;"><br>
+                <p class="para_brand">GO print.. has long been in<br> partner ship with Canon <br>as a sole
+                    authorised<br>
+                    dealer for Nepal. From<br>Products ranging from <br>Laser Printer, Multi-<br>Function-Printer,<br>
+                    Copiers, Colour Copiers,<br> Business Multi-<br>Function-Devices, Inkjet<br> Printers, Fax,
+                    Document<br> Scanners,Graphic <br>Scanners,
+                    Paper media<br> and Medical<br> Equipments. These<br> products have been <br>made available<br>
+                    throughout the country.<br>
+                    With Canon,Business <br>can be simple.
+                </p>
+
+            </div>
+             <!--2nd brand-->
+
+            <div class="brand_box">
+                <img src="homepic/brand_img2.png" style="height: 60px;margin-left:100px;width:80ppx;margin-top: 50px;">
+                <p class="para_brand" style="margin-top: 65px;"> Go Print, standing proudly<br> as the exclusive<br>
+                    authorized dealer for
+                    Hewlett-Packard in Nepal, boasts a longstanding and fruitful partnership.<br>
+                    Our extensive product<br> portfolio spans Laser Printers, Multi-Function Printers,<br> Copiers,
+                    Color Copiers,<br>
+                    Business Multi-Function Devices, Inkjet Printers,<br> Fax Machines,<br> Document Scanners, Graphic
+                    <br>Scanners,
+                    Paper Media</p>
+            </div>
+              <!--3rd brand-->
+            <div class="brand_box">
+                <img src="homepic/brand_img3.png" style="height: 30px;margin: 70px;">
+                <p class="para_brand"> GO print stands as<br> the exclusive authorized dealer <br>for Xerox
+                    in <br>Nepal,<br> cultivating a strong<br> and enduring partnership.<br>
+                    Our extensive product<br> range encompasses<br> a variety of cutting-edge solutions,<br>
+                    including Photocopiers,<br> Multifunction Printers, Laser Printers,<br>
+                    Color Printers,<br> Production Printers, Scanners,<br> Document Management
+                    Systems,<br> Paper Media, and<br> Office Supplies.</p>
+            </div>
+              <!--4th brand-->
+            <div class="brand_box">
+                <img src="homepic/brand_img4.png" style="height:30px;margin: 70px;">
+                <p class="para_brand"> We as an exclusive<br> authorized
+                    dealer for Sharp<br>here in Nepal,<br> brings forth an array<br> of
+                    <br>cutting-edge solutions.<br> Our diverse product line<br>
+                    includes High-Resolution Copiers,<br> Interactive
+                    Whiteboards, Multi-Function Printers,<br> Laser Printers,
+                    Document Scanners,<br> Visual Solutions, Professional Displays,
+                    and Office<br> Automation Equipment.
+                </p>
+            </div>
+
+        </div>
+        <br>
+        <br>
+
+    </main>
+    <!--this is for the footer -->
+    <footer>
+        <hr>
+        <ul>
+
+            <li><u>Terms & condition</u></li>
+            <li><u>Accessibility</u></li>
+            <li><u>Privacy Policy</u></li>
+            <li><u>About Ads</u></li>
+            <li> &copy; 2024 Go print.All rights reserved</li>
+        </ul>
+    </footer>
+</body>
+<!-- this script is for the redirection of view products button-->
+<script>
+   function redirect()
+    {
+        window.location.href = "./Products.html";
+    }
+
+</script>
+
+</html>
